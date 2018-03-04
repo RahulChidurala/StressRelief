@@ -11,6 +11,11 @@
         android:id="@+id/videoView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:scaleType="fitXY"
         android:src="@drawable/streching_gif_1" />
 
     <pl.droidsonroids.gif.GifImageView
@@ -18,13 +23,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:cropToPadding="false"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:scaleType="fitXY"
         android:src="@drawable/stretching_gif_2" />
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/videoView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/stretching_gif_cat"
-        />
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/stretching_gif_cat" />
 
 </android.support.v7.widget.LinearLayoutCompat>
