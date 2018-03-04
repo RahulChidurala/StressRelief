@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UseCases.IndoorActivities.IndoorActivity"></activity>
+        <activity android:name="com.hacklahoma.stressrelief.stressrelief.UseCases.IndoorActivityMenu.IndoorActivity"></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
