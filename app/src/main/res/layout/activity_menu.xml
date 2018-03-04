@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <Button
         android:id="@+id/btnIndoors"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
         android:backgroundTint="@android:color/holo_blue_dark"
         android:text="Indoors"
         android:textAlignment="center"
@@ -20,8 +19,8 @@
 
     <Button
         android:id="@+id/btnOutdoors"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
         android:backgroundTint="@android:color/holo_blue_dark"
         android:text="Outdoors"
         android:textAlignment="center"
@@ -43,12 +42,12 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/txtPrompt"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintVertical_bias="0.079" />
 
     <TextView
         android:id="@+id/txtPrompt"
@@ -62,6 +61,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtHeader" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:src="@drawable/Logo_ChillApp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txtPrompt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeader"
+        app:srcCompat="@drawable/Logo_ChillApp" />
 
 </android.support.constraint.ConstraintLayout>
