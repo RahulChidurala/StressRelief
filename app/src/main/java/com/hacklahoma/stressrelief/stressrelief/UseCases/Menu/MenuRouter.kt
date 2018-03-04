@@ -3,6 +3,7 @@ package com.hacklahoma.stressrelief.stressrelief.UseCases.Menu
 import android.content.Context
 import android.content.Intent
 import com.hacklahoma.stressrelief.stressrelief.UseCases.IndoorActivityMenu.IndoorActivity
+import com.hacklahoma.stressrelief.stressrelief.UseCases.OutdoorActivities.OutdoorMenu.OutdoorMenuActivity
 
 /**
  * Created by chrah on 3/3/2018.
@@ -30,7 +31,7 @@ class MenuRouter: IMenuRouter {
 
     override fun goToOutdoors() {
 
-//        val intent = Intent(context, OutdoorActivity::class.java)
-//        context.startActivity(intent)
+        val intent = Intent(context, OutdoorMenuActivity::class.java)
+        context.startActivity(intent)
     }
 }
