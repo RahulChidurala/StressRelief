@@ -10,6 +10,7 @@ import android.R.attr.x
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.TimeInterpolator
+import android.content.Intent
 import android.graphics.Point
 import android.support.v4.media.session.PlaybackStateCompat
 import android.view.Display
@@ -17,6 +18,8 @@ import android.view.animation.AccelerateInterpolator
 import android.view.animation.Animation
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.LinearInterpolator
+import com.hacklahoma.stressrelief.stressrelief.UseCases.StressActivity
+import com.hacklahoma.stressrelief.stressrelief.UseCases.StressRating.StressRatingActivity
 import java.util.*
 import kotlin.concurrent.schedule
 
@@ -96,5 +99,14 @@ class IndoorBreathingActivity: AppCompatActivity() {
         valueAnimator.interpolator = AccelerateInterpolator(1.3f)
         valueAnimator.duration = 5000
         valueAnimator.start()
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+        val intent = Intent(this, StressRatingActivity::class.java)
+        intent.putExtra("StressActivity", StressActivity.Breathing)
+        this.startActivity(intent)
+        finish()
     }
 }

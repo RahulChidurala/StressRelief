@@ -28,6 +28,8 @@
         <activity android:name=".UseCases.IndoorActivityMenu.IndoorActivity" />
         <activity android:name=".UseCases.IndoorActivities.IndoorBreathing.IndoorBreathingActivity" />
         <activity android:name=".UseCases.IndoorActivities.IndoorStretching.IndoorStrecthingActivity" />
+        <activity android:name=".UseCases.StressRating.StressRatingActivity"></activity>
+        <activity android:name=".UseCases.Graph.HappinessGraphActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
