@@ -93,7 +93,7 @@ class IndoorBreathingActivity: AppCompatActivity() {
             }
         })
 
-        valueAnimator.interpolator = DecelerateInterpolator(1.3f)
+        valueAnimator.interpolator = AccelerateInterpolator(1.3f)
         valueAnimator.duration = 5000
         valueAnimator.start()
     }
