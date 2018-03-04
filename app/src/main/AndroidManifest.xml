@@ -28,8 +28,12 @@
         <activity android:name=".UseCases.IndoorActivityMenu.IndoorActivity" />
         <activity android:name=".UseCases.IndoorActivities.IndoorBreathing.IndoorBreathingActivity" />
         <activity android:name=".UseCases.IndoorActivities.IndoorStretching.IndoorStrecthingActivity" />
-        <activity android:name=".UseCases.StressRating.StressRatingActivity"></activity>
-        <activity android:name=".UseCases.Graph.HappinessGraphActivity"></activity>
+        <activity android:name=".UseCases.StressRating.StressRatingActivity"/>
+        <activity android:name=".UseCases.Graph.HappinessGraphActivity"/>
+        <activity android:name=".UseCases.OutdoorActivities.OutdoorMenu.OutdoorMenuActivity"/>
+        <activity android:name=".UseCases.OutdoorActivities.OutdoorParkActivity"/>
+        <activity android:name=".UseCases.OutdoorActivities.OutdoorEventsActivity"/>
+        <activity android:name=".UseCases.OutdoorActivities.OutdoorExerciseActivity"/>
 
         <meta-data
             android:name="preloaded_fonts"
