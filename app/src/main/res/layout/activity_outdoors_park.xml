@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:fontFamily="Rubik"
-                android:text="Events Nearby"
+                android:text="Parks Nearby"
                 android:textAlignment="center"
                 android:textColor="@color/colorChillBlud"
                 android:textSize="36sp"
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Events within 5 miles:"
+            android:text="Parks within 5 miles:"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -78,7 +78,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Yoga (Planet Fitness)" />
+                        android:text="Reaves Park (0.5 mi)" />
 
                     <ImageView
                         android:id="@+id/imgImage1"
@@ -98,7 +98,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Yoga (Planet Fitness)" />
+                        android:text="Centennial Park (4.1 mi)" />
 
                     <ImageView
                         android:id="@+id/imgImage2"
@@ -115,7 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Events within 10 miles:"
+            android:text="Parks within 10 miles:"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -139,7 +139,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Marathon (Downtown OKC)" />
+                        android:text="Anonymous Park (9.5 mi)" />
 
                     <ImageView
                         android:id="@+id/imgImage3"
@@ -156,7 +156,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="All other events:"
+            android:text="All other parks:"
             android:textSize="18sp"
             android:textStyle="bold" />
 
