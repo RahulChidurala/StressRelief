@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Here are some things you could do to chill out without going out:"
+            android:text="Chill out without going out!"
             android:textAlignment="center"
             android:textColor="@color/colorChillBlud"
             android:layout_margin="8sp"
@@ -130,26 +130,26 @@
             android:layout_height="wrap_content"
             android:layout_weight="2">
             <ImageButton
-                android:id="@+id/speakersImage"
+                android:id="@+id/smileImage"
                 android:layout_width="match_parent"
                 android:layout_height="152sp"
                 android:scaleType="centerCrop"
                 android:layout_marginBottom="4sp"
                 android:layout_marginTop="2sp"
-                android:src="@drawable/listening_image" />
+                android:src="@drawable/smile_image" />
             <TextView
-                android:id="@+id/speakersText"
+                android:id="@+id/smileText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/speakersImage"
-                android:layout_alignEnd="@id/speakersImage"
-                android:layout_alignRight="@id/speakersImage"
+                android:layout_alignBottom="@id/smileImage"
+                android:layout_alignEnd="@id/smileImage"
+                android:layout_alignRight="@id/smileImage"
                 android:layout_marginRight="16sp"
                 android:layout_marginBottom="16sp"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif"
                 android:textColor="@android:color/white"
-                android:text="Turn your speakers on" />
+                android:text="Take a second to smile" />
         </RelativeLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
