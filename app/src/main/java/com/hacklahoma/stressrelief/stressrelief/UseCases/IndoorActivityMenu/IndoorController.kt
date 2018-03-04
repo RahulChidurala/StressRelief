@@ -1,11 +1,13 @@
 package com.hacklahoma.stressrelief.stressrelief.UseCases.IndoorActivityMenu
 
+import java.lang.ref.WeakReference
+
 /**
  * Created by chrah on 3/3/2018.
  */
 interface IIndoorController {
 
-    var router: IIndoorRouter?
+    var router: WeakReference<IIndoorRouter>?
 
     fun actionToStretching()
     fun actionToBreathing()
@@ -13,13 +15,18 @@ interface IIndoorController {
 
 class IndoorController: IIndoorController {
 
-    override var router: IIndoorRouter? = null
+    override var router: WeakReference<IIndoorRouter>? = null
+
+    constructor(router: IIndoorRouter) {
+
+        this.router = WeakReference(router)
+    }
 
     override fun actionToBreathing() {
-        router?.goToBreathing()
+        router!!.get()?.goToBreathing()
     }
 
     override fun actionToStretching() {
-        router?.goToStretching()
+        router!!.get()?.goToStretching()
     }
 }

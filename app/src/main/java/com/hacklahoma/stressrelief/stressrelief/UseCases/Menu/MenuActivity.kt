@@ -16,8 +16,7 @@ class MenuActivity : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
 
         router = MenuRouter(this)
-        controller = MenuController()
-        controller.router = router
+        controller = MenuController(router)
 
         val btnIndoors = findViewById<Button>(R.id.btnIndoors)
         val btnOutdoors = findViewById<Button>(R.id.btnOutdoors)

@@ -3,6 +3,7 @@ package com.hacklahoma.stressrelief.stressrelief.UseCases.IndoorActivityMenu
 import android.content.Context
 import android.content.Intent
 import com.hacklahoma.stressrelief.stressrelief.UseCases.IndoorActivities.IndoorBreathing.IndoorBreathingActivity
+import com.hacklahoma.stressrelief.stressrelief.UseCases.IndoorActivities.IndoorStretching.IndoorStrecthingActivity
 
 /**
  * Created by chrah on 3/3/2018.
@@ -28,6 +29,8 @@ class IndoorRouter: IIndoorRouter {
     }
 
     override fun goToStretching() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+        val intent = Intent(context, IndoorStrecthingActivity::class.java)
+        context.startActivity(intent)
     }
 }
