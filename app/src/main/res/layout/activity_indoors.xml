@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,7 +28,8 @@
                 android:layout_width="32dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/colorChillBlud" />
+                android:layout_marginTop="4sp"
+                android:src="@drawable/logo_chillapp" />
 
             <TextView
                 android:id="@+id/titleText"
@@ -63,9 +63,7 @@
             android:text="Here are some things you could do to chill out without going out:"
             android:textAlignment="center"
             android:textColor="@color/colorChillBlud"
-            android:layout_marginBottom="8sp"
-            android:layout_marginRight="8sp"
-            android:layout_marginLeft="8sp"
+            android:layout_margin="8sp"
             android:textSize="24sp" />
         <RelativeLayout
             android:layout_width="match_parent"
@@ -99,23 +97,25 @@
             android:layout_weight="2">
 
             <ImageButton
-                android:id="@+id/playImage"
+                android:id="@+id/breatheImage"
                 android:layout_width="match_parent"
                 android:layout_height="152sp"
-                android:background="@color/colorChillBlud" />
+                android:src="@drawable/breathing_image"
+                android:scaleType="centerCrop"
+                 />
             <TextView
-                android:id="@+id/playText"
+                android:id="@+id/breatheText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/playImage"
-                android:layout_alignEnd="@id/playImage"
-                android:layout_alignRight="@id/playImage"
+                android:layout_alignBottom="@id/breatheImage"
+                android:layout_alignEnd="@id/breatheImage"
+                android:layout_alignRight="@id/breatheImage"
                 android:layout_marginRight="16sp"
                 android:layout_marginBottom="16sp"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:fontFamily="sans-serif"
                 android:textColor="@android:color/white"
-                android:text="Time to play!"
+                android:text="Time to breathe"
                 />
         </RelativeLayout>
 
@@ -127,7 +127,8 @@
                 android:id="@+id/speakersImage"
                 android:layout_width="match_parent"
                 android:layout_height="152sp"
-                android:background="@color/colorChillBlud" />
+                android:scaleType="centerCrop"
+                android:src="@drawable/listening_image" />
             <TextView
                 android:id="@+id/speakersText"
                 android:layout_width="wrap_content"
@@ -137,7 +138,7 @@
                 android:layout_alignRight="@id/speakersImage"
                 android:layout_marginRight="16sp"
                 android:layout_marginBottom="16sp"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:fontFamily="sans-serif"
                 android:textColor="@android:color/white"
                 android:text="Turn your speakers on" />
