@@ -1,5 +1,6 @@
 package com.hacklahoma.stressrelief.stressrelief.UseCases.IndoorActivityMenu
 
+import android.graphics.Color
 import android.media.Image
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -28,11 +29,21 @@ class IndoorActivity: AppCompatActivity() {
 
             controller.actionToStretching()
         })
+        img_btn_stretchingImage.setColorFilter(Color.argb(120, 0, 0, 0))
 
         val img_btn_breathe = findViewById<ImageButton>(R.id.img_btn_breathe)
         img_btn_breathe.setOnClickListener(View.OnClickListener {
 
             controller.actionToBreathing()
         })
+        img_btn_breathe.setColorFilter(Color.argb(120, 0, 0, 0))
+
+        val img_btn_smile = findViewById<ImageButton>(R.id.smileImage)
+        img_btn_smile.setOnClickListener(View.OnClickListener {
+
+            controller.actionToBreathing()
+        })
+        img_btn_smile.setColorFilter(Color.argb(120, 0, 0, 0))
+
     }
 }
