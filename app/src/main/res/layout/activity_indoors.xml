@@ -1,17 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintLeft_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="parent"
-        android:text="Indoor activity"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="149dp" />
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="0dp">
+
+            <ImageView
+                android:id="@+id/Icon"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="#1B9AF7" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="Rubik"
+                android:text="Indoors"
+                android:textAlignment="center"
+                android:textColor="#1B9AF7"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="36sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textStyle="bold"
+                android:text="< Back"
+                android:textColor="#1B9AF7"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pageDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Here are some things you could do to chill out without going out:"
+            android:textAlignment="center"
+            android:textColor="#1B9AF7"
+            android:layout_marginBottom="8sp"
+            android:layout_marginRight="8sp"
+            android:layout_marginLeft="8sp"
+            android:textSize="24sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <ImageButton
+                android:id="@+id/stretchingImage"
+                android:layout_width="match_parent"
+                android:layout_height="152sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stretchingImage" />
+            <TextView
+                android:id="@+id/stretchingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/stretchingImage"
+                android:layout_alignEnd="@id/stretchingImage"
+                android:layout_alignRight="@id/stretchingImage"
+                android:layout_marginRight="16sp"
+                android:layout_marginBottom="8sp"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/white"
+                android:text="Let's do some stretching"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <ImageButton
+                android:id="@+id/playImage"
+                android:layout_width="match_parent"
+                android:layout_height="152sp"
+                app:srcCompat="#1B9AF7" />
+            <TextView
+                android:id="@+id/playText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/playImage"
+                android:layout_alignEnd="@id/playImage"
+                android:layout_alignRight="@id/playImage"
+                android:layout_marginRight="16sp"
+                android:layout_marginBottom="16sp"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/white"
+                android:text="Time to play!"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <ImageButton
+                android:id="@+id/speakersImage"
+                android:layout_width="match_parent"
+                android:layout_height="152sp"
+                app:srcCompat="#1B9AF7" />
+            <TextView
+                android:id="@+id/speakersText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/speakersImage"
+                android:layout_alignEnd="@id/speakersImage"
+                android:layout_alignRight="@id/speakersImage"
+                android:layout_marginRight="16sp"
+                android:layout_marginBottom="16sp"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/white"
+                android:text="Turn your speakers on" />
+        </RelativeLayout>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
