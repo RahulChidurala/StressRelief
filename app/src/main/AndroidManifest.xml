@@ -34,6 +34,7 @@
         <activity android:name=".UseCases.OutdoorActivities.OutdoorParkActivity"/>
         <activity android:name=".UseCases.OutdoorActivities.OutdoorEventsActivity"/>
         <activity android:name=".UseCases.OutdoorActivities.OutdoorExerciseActivity"/>
+        <activity android:name=".UseCases.IndoorActivities.IndoorSmileActivity"/>
 
         <meta-data
             android:name="preloaded_fonts"

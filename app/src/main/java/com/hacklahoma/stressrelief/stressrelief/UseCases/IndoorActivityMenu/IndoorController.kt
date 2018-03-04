@@ -11,6 +11,7 @@ interface IIndoorController {
 
     fun actionToStretching()
     fun actionToBreathing()
+    fun actionToSmile()
 }
 
 class IndoorController: IIndoorController {
@@ -28,5 +29,9 @@ class IndoorController: IIndoorController {
 
     override fun actionToStretching() {
         router!!.get()?.goToStretching()
+    }
+
+    override fun actionToSmile() {
+        router!!.get()?.goToSmile()
     }
 }
