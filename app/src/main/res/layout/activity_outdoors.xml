@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:fontFamily="Rubik"
-                android:text="Indoors"
+                android:text="Outdoors"
                 android:textAlignment="center"
                 android:textColor="@color/colorChillBlud"
                 android:textSize="36sp"
@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Here are some things you could do to chill out without going out:"
+            android:text="Let's get some fresh air today!"
             android:textAlignment="center"
             android:textColor="@color/colorChillBlud"
             android:layout_margin="8sp"
@@ -70,28 +70,26 @@
             android:layout_height="wrap_content"
             android:layout_weight="2">
             <ImageButton
-                android:id="@+id/img_btn_stretchingImage"
+                android:id="@+id/img_btn_parkImage"
                 android:layout_width="match_parent"
                 android:layout_height="152sp"
                 android:scaleType="centerCrop"
-                android:alpha="0.5"
-                android:foregroundTintMode="add"
                 android:layout_marginBottom="2sp"
                 android:layout_marginTop="2sp"
-                android:src="@drawable/stretching_image" />
+                android:src="@drawable/park_image" />
             <TextView
-                android:id="@+id/stretchingText"
+                android:id="@+id/parkText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/img_btn_stretchingImage"
-                android:layout_alignEnd="@id/img_btn_stretchingImage"
-                android:layout_alignRight="@id/img_btn_stretchingImage"
+                android:layout_alignBottom="@id/img_btn_parkImage"
+                android:layout_alignEnd="@id/img_btn_parkImage"
+                android:layout_alignRight="@id/img_btn_parkImage"
                 android:layout_marginRight="16sp"
                 android:layout_marginBottom="8sp"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif"
                 android:textColor="@android:color/white"
-                android:text="Let's do some stretching"
+                android:text="Park, anyone?"
                 />
         </RelativeLayout>
 
@@ -101,27 +99,27 @@
             android:layout_weight="2">
 
             <ImageButton
-                android:id="@+id/img_btn_breathe"
+                android:id="@+id/img_btn_nearby"
                 android:layout_width="match_parent"
                 android:layout_height="152sp"
-                android:src="@drawable/breathing_image"
+                android:src="@drawable/nearby_image"
                 android:scaleType="centerCrop"
                 android:layout_marginBottom="2sp"
                 android:layout_marginTop="2sp"
-                 />
+                />
             <TextView
-                android:id="@+id/breatheText"
+                android:id="@+id/nearbyText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/img_btn_breathe"
-                android:layout_alignEnd="@id/img_btn_breathe"
-                android:layout_alignRight="@id/img_btn_breathe"
+                android:layout_alignBottom="@id/img_btn_nearby"
+                android:layout_alignEnd="@id/img_btn_nearby"
+                android:layout_alignRight="@id/img_btn_nearby"
                 android:layout_marginRight="16sp"
                 android:layout_marginBottom="16sp"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif"
                 android:textColor="@android:color/white"
-                android:text="Time to breathe"
+                android:text="Check out what's happening nearby!"
                 />
         </RelativeLayout>
 
@@ -130,26 +128,26 @@
             android:layout_height="wrap_content"
             android:layout_weight="2">
             <ImageButton
-                android:id="@+id/speakersImage"
+                android:id="@+id/exerciseImage"
                 android:layout_width="match_parent"
                 android:layout_height="152sp"
                 android:scaleType="centerCrop"
                 android:layout_marginBottom="4sp"
                 android:layout_marginTop="2sp"
-                android:src="@drawable/listening_image" />
+                android:src="@drawable/exercise_image" />
             <TextView
-                android:id="@+id/speakersText"
+                android:id="@+id/exerciseText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/speakersImage"
-                android:layout_alignEnd="@id/speakersImage"
-                android:layout_alignRight="@id/speakersImage"
+                android:layout_alignBottom="@id/exerciseImage"
+                android:layout_alignEnd="@id/exerciseImage"
+                android:layout_alignRight="@id/exerciseImage"
                 android:layout_marginRight="16sp"
                 android:layout_marginBottom="16sp"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif"
                 android:textColor="@android:color/white"
-                android:text="Turn your speakers on" />
+                android:text="Raise those endorphins!" />
         </RelativeLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
