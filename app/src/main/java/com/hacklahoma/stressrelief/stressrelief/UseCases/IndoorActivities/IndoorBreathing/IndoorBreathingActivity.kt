@@ -18,6 +18,7 @@ import android.view.animation.AccelerateInterpolator
 import android.view.animation.Animation
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.LinearInterpolator
+import android.widget.TextView
 import com.hacklahoma.stressrelief.stressrelief.UseCases.StressActivity
 import com.hacklahoma.stressrelief.stressrelief.UseCases.StressRating.StressRatingActivity
 import java.util.*
@@ -35,12 +36,15 @@ class IndoorBreathingActivity: AppCompatActivity() {
 
     private final val MAX_CIRCLE_SCALE = 1.8f
 
+    private lateinit var txt_breathe: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_indoor_breathing)
 
         img_breathingCircle = findViewById(R.id.img_breathingCircle)
+        txt_breathe = findViewById(R.id.txt_breathe)
 
         enlargeCircle()
     }
@@ -63,6 +67,7 @@ class IndoorBreathingActivity: AppCompatActivity() {
 
                     runOnUiThread {
                         shrinkCircle()
+                        txt_breathe.text = "Breathe out"
                     }
                 }
             }
@@ -91,6 +96,7 @@ class IndoorBreathingActivity: AppCompatActivity() {
                 Timer().schedule(2000) {
                     runOnUiThread {
                         enlargeCircle()
+                        txt_breathe.text = "Breathe in"
                     }
                 }
             }
