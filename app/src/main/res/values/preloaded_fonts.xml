@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
-        <item>@font/anaheim</item>
-        <item>@font/asap_bold</item>
-        <item>@font/basic</item>
-        <item>@font/biryani_bold</item>
-        <item>@font/catamaran_bold</item>
-        <item>@font/galdeano</item>
-        <item>@font/inder</item>
-        <item>@font/rubik</item>
     </array>
 </resources>

@@ -37,7 +37,6 @@
         android:id="@+id/txtHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/rubik"
         android:text="Welcome To ChillApp"
         android:textAlignment="center"
         android:textColor="@android:color/holo_blue_dark"
