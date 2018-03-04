@@ -29,7 +29,7 @@
                 android:layout_width="32dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="#1B9AF7" />
+                android:background="@color/colorChillBlud" />
 
             <TextView
                 android:id="@+id/titleText"
@@ -39,7 +39,7 @@
                 android:fontFamily="Rubik"
                 android:text="Indoors"
                 android:textAlignment="center"
-                android:textColor="#1B9AF7"
+                android:textColor="@color/colorChillBlud"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
@@ -50,8 +50,8 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:textStyle="bold"
-                android:text="< Back"
-                android:textColor="#1B9AF7"
+                android:text="Back"
+                android:textColor="@color/colorChillBlud"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -62,7 +62,7 @@
             android:layout_weight="1"
             android:text="Here are some things you could do to chill out without going out:"
             android:textAlignment="center"
-            android:textColor="#1B9AF7"
+            android:textColor="@color/colorChillBlud"
             android:layout_marginBottom="8sp"
             android:layout_marginRight="8sp"
             android:layout_marginLeft="8sp"
@@ -76,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="152sp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/stretchingImage" />
+                android:src="@drawable/stretching_image" />
             <TextView
                 android:id="@+id/stretchingText"
                 android:layout_width="wrap_content"
@@ -102,7 +102,7 @@
                 android:id="@+id/playImage"
                 android:layout_width="match_parent"
                 android:layout_height="152sp"
-                app:srcCompat="#1B9AF7" />
+                android:background="@color/colorChillBlud" />
             <TextView
                 android:id="@+id/playText"
                 android:layout_width="wrap_content"
@@ -127,7 +127,7 @@
                 android:id="@+id/speakersImage"
                 android:layout_width="match_parent"
                 android:layout_height="152sp"
-                app:srcCompat="#1B9AF7" />
+                android:background="@color/colorChillBlud" />
             <TextView
                 android:id="@+id/speakersText"
                 android:layout_width="wrap_content"
