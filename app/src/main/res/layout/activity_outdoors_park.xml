@@ -55,8 +55,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Parks within 5 miles:"
-            android:textAlignment="textStart"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -66,7 +66,48 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtPark1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Reaves Park (0.8 mi)" />
+
+                    <ImageView
+                        android:id="@+id/imgImage1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/common_google_signin_btn_icon_dark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtPark2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Another Park (2.3 mi)" />
+
+                    <ImageView
+                        android:id="@+id/imgImage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/common_google_signin_btn_icon_dark" />
+                </LinearLayout>
+            </LinearLayout>
         </ScrollView>
 
         <TextView
@@ -75,7 +116,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Parks within 10 miles:"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -85,7 +127,28 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtPark3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Centennial Park (9 mi)" />
+
+                    <ImageView
+                        android:id="@+id/imgImage3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/common_google_signin_btn_icon_dark" />
+                </LinearLayout>
+            </LinearLayout>
         </ScrollView>
 
         <TextView
@@ -94,7 +157,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="All other parks:"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <ScrollView
             android:layout_width="match_parent"
