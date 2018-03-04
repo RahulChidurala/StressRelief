@@ -65,15 +65,14 @@
 
     <ImageView
         android:id="@+id/imageView3"
+        app:srcCompat="@drawable/logo_chillapp"
         android:layout_width="256dp"
         android:layout_height="256dp"
-        android:src="@drawable/Logo_ChillApp"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/txtPrompt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtHeader"
-        app:srcCompat="@drawable/Logo_ChillApp" />
+        app:layout_constraintTop_toBottomOf="@+id/txtHeader" />
 
 </android.support.constraint.ConstraintLayout>
