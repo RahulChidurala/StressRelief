@@ -52,7 +52,8 @@
                 android:background="@android:color/transparent"
                 android:text="Back"
                 android:textColor="@color/colorChillBlud"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:visibility="invisible" />
         </LinearLayout>
 
         <TextView
