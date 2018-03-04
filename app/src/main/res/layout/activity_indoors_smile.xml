@@ -99,7 +99,7 @@
                 android:layout_marginRight="8sp"
                 android:layout_marginTop="2sp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/meme_img" />
+                android:src="@drawable/funny_img" />
 
             <TextView
                 android:id="@+id/funnyTxt"

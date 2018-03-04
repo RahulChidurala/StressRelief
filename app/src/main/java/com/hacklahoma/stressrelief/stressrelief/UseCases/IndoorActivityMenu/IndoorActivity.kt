@@ -41,7 +41,7 @@ class IndoorActivity: AppCompatActivity() {
         val img_btn_smile = findViewById<ImageButton>(R.id.smileImage)
         img_btn_smile.setOnClickListener(View.OnClickListener {
 
-            controller.actionToBreathing()
+            controller.actionToSmile()
         })
         img_btn_smile.setColorFilter(Color.argb(120, 0, 0, 0))
 

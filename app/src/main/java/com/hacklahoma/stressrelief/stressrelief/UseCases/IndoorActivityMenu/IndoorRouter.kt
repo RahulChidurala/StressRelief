@@ -3,6 +3,7 @@ package com.hacklahoma.stressrelief.stressrelief.UseCases.IndoorActivityMenu
 import android.content.Context
 import android.content.Intent
 import com.hacklahoma.stressrelief.stressrelief.UseCases.IndoorActivities.IndoorBreathing.IndoorBreathingActivity
+import com.hacklahoma.stressrelief.stressrelief.UseCases.IndoorActivities.IndoorSmileActivity
 import com.hacklahoma.stressrelief.stressrelief.UseCases.IndoorActivities.IndoorStretching.IndoorStrecthingActivity
 
 /**
@@ -13,6 +14,7 @@ interface IIndoorRouter {
 
     fun goToStretching()
     fun goToBreathing()
+    fun goToSmile()
 }
 
 class IndoorRouter: IIndoorRouter {
@@ -31,6 +33,11 @@ class IndoorRouter: IIndoorRouter {
     override fun goToStretching() {
 
         val intent = Intent(context, IndoorStrecthingActivity::class.java)
+        context.startActivity(intent)
+    }
+
+    override fun goToSmile() {
+        val intent = Intent(context, IndoorSmileActivity::class.java)
         context.startActivity(intent)
     }
 }
