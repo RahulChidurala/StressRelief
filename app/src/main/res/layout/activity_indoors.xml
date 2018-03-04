@@ -44,15 +44,10 @@
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/backButton"
+            <Space
                 android:layout_width="36sp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:text="Back"
-                android:textColor="@color/colorChillBlud"
-                android:textSize="20sp" />
+                android:layout_weight="1" />
         </LinearLayout>
 
         <TextView
