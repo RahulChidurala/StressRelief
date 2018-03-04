@@ -4,11 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@mipmap/chill_app_launcher_round"
+        android:label="ChillOut"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false">
         <activity android:name=".UseCases.Menu.MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
