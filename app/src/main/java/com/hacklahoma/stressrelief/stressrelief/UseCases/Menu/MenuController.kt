@@ -1,12 +1,16 @@
 package com.hacklahoma.stressrelief.stressrelief.UseCases.Menu
 
+import java.lang.ref.Reference
+import java.lang.ref.WeakReference
+import java.util.*
+
 /**
  * Created by chrah on 3/3/2018.
  */
 
 interface IMenuController {
 
-    var router: IMenuRouter?
+    var router: WeakReference<IMenuRouter>?
 
     fun actionIndoors()
     fun actionOutdoors()
@@ -14,15 +18,19 @@ interface IMenuController {
 
 class MenuController: IMenuController {
 
-    override var router: IMenuRouter? = null
+    override var router: WeakReference<IMenuRouter>? = null
+
+    constructor(router: IMenuRouter) {
+        this.router = WeakReference(router)
+    }
 
     override fun actionIndoors() {
 
-        router?.goToIndoors()
+        router!!.get()?.goToIndoors()
     }
 
     override fun actionOutdoors() {
 
-        router?.goToOutdoors()
+        router!!.get()?.goToOutdoors()
     }
 }

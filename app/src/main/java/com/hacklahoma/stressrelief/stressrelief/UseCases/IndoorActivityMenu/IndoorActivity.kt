@@ -1,5 +1,6 @@
 package com.hacklahoma.stressrelief.stressrelief.UseCases.IndoorActivityMenu
 
+import android.media.Image
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
@@ -20,8 +21,13 @@ class IndoorActivity: AppCompatActivity() {
         setContentView(R.layout.activity_indoors)
 
         router = IndoorRouter(this)
-        controller = IndoorController()
-        controller.router = router
+        controller = IndoorController(router)
+
+        val img_btn_stretchingImage = findViewById<ImageButton>(R.id.img_btn_stretchingImage)
+        img_btn_stretchingImage.setOnClickListener(View.OnClickListener {
+
+            controller.actionToStretching()
+        })
 
         val img_btn_breathe = findViewById<ImageButton>(R.id.img_btn_breathe)
         img_btn_breathe.setOnClickListener(View.OnClickListener {
